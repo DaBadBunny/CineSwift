@@ -1,0 +1,10 @@
+/* IMPORT DES FEUILLES DE STYLE */
+@import './base.css';
+@import './utils.css';
+
+/* STYLE PROPRE A L'APPLICATION */
+
+.home-container {
+  width: 80%;
+  margin: 10rem auto;
+}
