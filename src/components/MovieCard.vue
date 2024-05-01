@@ -23,6 +23,7 @@ const props = defineProps<{
       >
       <div class="infos">
         <span class="bold">{{ props.title }} ({{ props.year }})</span>
+        <p>{{ props.runtime }}</p>
         <p>{{ props.plot }}</p>
       </div>
     </div>
@@ -41,7 +42,7 @@ const props = defineProps<{
 
   .movie-box:hover .poster {
     transition: all 0.3s ease-in-out;
-    opacity: 0.1;
+    opacity: 0.05;
   }
 
   .poster {

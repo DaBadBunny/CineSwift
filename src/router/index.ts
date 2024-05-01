@@ -13,6 +13,11 @@ const router = createRouter({
       name: 'ajout',
       component: () => import('../views/AjoutFilm.vue')
     },
+    {
+      path: '/random/:id',
+      name: 'random',
+      component: () => import('../views/RandomMovie.vue'),
+    },
   ]
 })
 
