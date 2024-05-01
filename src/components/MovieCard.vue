@@ -7,32 +7,54 @@ const props = defineProps<{
   director: string,
   actors: string,
   year: string,
+  plot: string,
 }>()
+
 </script>
 
 <template>
-  <div class="movie-box">
-    <img 
-      :src="props.poster" 
-      :alt="props.title"
+    <div 
+      class="movie-box"
     >
-    <div class="flex"><span class="movie-title">{{ props.title }} ({{ props.year }})</span></div>
-  </div>
+      <img 
+        class="poster"
+        :src="props.poster" 
+        :alt="props.title"
+      >
+      <div class="infos">
+        <span class="bold">{{ props.title }} ({{ props.year }})</span>
+        <p>{{ props.plot }}</p>
+      </div>
+    </div>
 </template>
 
 <style scoped>
   .movie-box {
-    background-color: black;
+    width: 15%;
+    height: 20rem;
+    margin-bottom: 1rem;
+    background-color: rgba(0,0,0,1);
+    background-size: cover;
+    color: white;
+    position: relative;
   }
 
-  .movie-title {
-    color: white;
-    font-size: 1rem;
-    font-weight: bold;
-    margin: auto;
-    height: 1.5rem;
-    line-height: 1.5rem;
-    padding: 0.2rem;
+  .movie-box:hover .poster {
+    transition: all 0.3s ease-in-out;
+    opacity: 0.1;
+  }
+
+  .poster {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .infos {
+    padding: 1rem;
   }
 
 </style>

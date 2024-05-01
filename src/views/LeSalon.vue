@@ -1,25 +1,24 @@
 <script setup lang="ts">
   import MovieCard from '@/components/MovieCard.vue'
-  import moviesData from '@/assets/data.json'
-
-  // const moviesList = JSON.parse(moviesData)
+  import rawData from '@/assets/data.json'
 
 </script>
 
 <template>
   <div class="salon">
     <div class="home-container">
-      <div class="flex  wrap">
+      <div class="flex  wrap  between">
         <MovieCard 
-          v-for="(movie, idx) of moviesList"
+          v-for="(movie, idx) of rawData"
           :key="idx"
-          :title="movie.title"
-          :year="movie.year"
-          :runtime="movie.runtime"
-          :genre="movie.genre"
-          :director="movie.director"
-          :actors="movie.actors"
-          :poster="movie.poster"
+          :title="movie.Title"
+          :year="movie.Year"
+          :runtime="movie.Runtime"
+          :genre="movie.Genre"
+          :director="movie.Director"
+          :actors="movie.Actors"
+          :poster="movie.Poster"
+          :plot="movie.Plot"
         />
       </div>
     </div>
