@@ -2,14 +2,14 @@
   import MovieCard from '@/components/MovieCard.vue'
   import rawData from '@/assets/data.json'
 
+  let MovieList = rawData
 </script>
 
 <template>
-  <div class="salon">
     <div class="home-container">
       <div class="flex  wrap  between">
         <MovieCard 
-          v-for="(movie, idx) of rawData"
+          v-for="(movie, idx) of MovieList"
           :key="idx"
           :title="movie.Title"
           :year="movie.Year"
@@ -22,5 +22,8 @@
         />
       </div>
     </div>
-  </div>
 </template>
+
+<style scoped>
+
+</style>

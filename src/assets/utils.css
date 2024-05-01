@@ -25,3 +25,7 @@
 .mt-5 {
   margin-top: 5rem;
 }
+
+.no-link {
+  text-decoration: none;
+}
