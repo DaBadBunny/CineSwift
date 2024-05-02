@@ -7,7 +7,7 @@
 
 <template>
     <div class="home-container">
-      <div class="flex  wrap  between">
+      <div class="flex  wrap  between  gap">
         <MovieCard 
           v-for="(movie, idx) of MovieList"
           :key="idx"
