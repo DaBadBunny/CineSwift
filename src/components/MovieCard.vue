@@ -31,9 +31,8 @@ const props = defineProps<{
 
 <style scoped>
   .movie-box {
-    width: 15%;
-    height: 20rem;
-    margin-bottom: 1rem;
+    width: 24%;
+    height: 25rem;
     background-color: rgba(0,0,0,1);
     background-size: cover;
     color: white;

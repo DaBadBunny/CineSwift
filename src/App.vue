@@ -3,7 +3,7 @@ import { RouterView, useRouter } from 'vue-router'
 const router = useRouter()
 
 function pickRandomMovie() {
-  router.push({ name: 'random', params: { id: Math.floor(Math.random() * 372) } })
+  router.push({ name: 'random', params: { id: Math.floor(Math.random() * 371) } })
   }
 </script>
 
