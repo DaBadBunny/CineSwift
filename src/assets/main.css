@@ -9,19 +9,18 @@
 }
 
 .home-title {
-  margin: 5rem auto 2rem auto;
+  margin: 0 auto;
   text-align: center;
   color: rgba(255,255,255,0.9);
-  font-family: 'Courier New', Courier, monospace;
   font-size: 3rem;
   line-height: 3rem;
   text-decoration: inherit;
+  cursor: pointer;
 }
 
 .home-item {
-  margin: 5rem auto 2rem auto;
+  margin: 0 auto;
   color: rgba(255,255,255,0.9);
-  font-family: 'Courier New', Courier, monospace;
   font-size: 1.5rem;
   line-height: 3rem;
   cursor: pointer;
