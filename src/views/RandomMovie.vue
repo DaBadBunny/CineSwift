@@ -27,8 +27,8 @@
 
 <style scoped>
 .movie-box {
-  width: 25%;
-  height: 32rem;
+  width: 30%;
+  aspect-ratio: 2/3;
   margin: auto;
 }
 </style>
