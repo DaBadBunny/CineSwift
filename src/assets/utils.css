@@ -30,6 +30,10 @@
   margin-top: 5rem;
 }
 
+.mb-2 {
+  margin-bottom: 2rem;
+}
+
 .no-link {
   text-decoration: none;
 }
