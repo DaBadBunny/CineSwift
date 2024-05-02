@@ -31,8 +31,8 @@ const props = defineProps<{
 
 <style scoped>
   .movie-box {
+    aspect-ratio: 2/3;
     width: 24%;
-    height: 25rem;
     background-color: rgba(0,0,0,1);
     background-size: cover;
     color: white;
@@ -57,4 +57,15 @@ const props = defineProps<{
     padding: 1rem;
   }
 
+  @media (max-width: 1250px) {
+    .movie-box {
+      width: 48%;
+    }
+  }
+
+  @media (max-width: 720px) {
+    .movie-box {
+      width: 100%;
+    }
+  }
 </style>

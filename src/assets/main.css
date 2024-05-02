@@ -5,7 +5,7 @@
 /* STYLE PROPRE A L'APPLICATION */
 .home-container {
   width: 80%;
-  margin: 5rem auto;
+  margin: 5rem auto 1rem auto;
 }
 
 .home-title {
