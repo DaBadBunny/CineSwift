@@ -2,12 +2,12 @@
   import MovieCard from '@/components/MovieCard.vue'
   import rawData from '@/assets/data.json'
 
-  let MovieList = rawData
+  let MovieList = rawData.sort((a, b) => a.Title.localeCompare(b.Title))
 </script>
 
 <template>
     <div class="home-container">
-      <div class="flex  wrap  between  gap">
+      <div class="flex  wrap  gap">
         <MovieCard 
           v-for="(movie, idx) of MovieList"
           :key="idx"
