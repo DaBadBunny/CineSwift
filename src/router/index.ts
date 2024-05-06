@@ -5,18 +5,18 @@ const router = createRouter({
   routes: [
     {
       path: '/',
-      name: 'salon',
-      component: () => import('../views/LeSalon.vue')
+      name: 'carte',
+      component: () => import('../views/LaCarte.vue')
     },
     {
-      path: '/add',
-      name: 'ajout',
-      component: () => import('../views/AjoutFilm.vue')
+      path: '/menus',
+      name: 'menus',
+      component: () => import('../views/LesMenus.vue')
     },
     {
-      path: '/random/:id',
-      name: 'random',
-      component: () => import('../views/RandomMovie.vue'),
+      path: '/suggestion/:id',
+      name: 'suggestion',
+      component: () => import('../views/SuggestionChef.vue'),
     },
   ]
 })
