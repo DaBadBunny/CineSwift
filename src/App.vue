@@ -3,26 +3,40 @@ import { RouterView, useRouter } from 'vue-router'
 const router = useRouter()
 
 function pickRandomMovie() {
-  router.push({ name: 'random', params: { id: Math.floor(Math.random() * 370) } })
-  }
+  router.push({ name: 'suggestion', params: { id: Math.floor(Math.random() * 366) } })
+}
+
+function chooseYourWay() {
+  router.push({ name: 'menus' })
+}
 </script>
 
 <template>
   <main>
-    <nav class="flex  mt-5  mb-2">
+    <nav class="nav-grid">
+      <span 
+        class="home-item"
+        @click="chooseYourWay()"
+      >
+        les menus
+      </span>
+      <a href="/" class="no-link  mh-auto"><h1 class="home-title">LA CARTE</h1></a>
       <span 
         class="home-item" 
         @click="pickRandomMovie()"
       >
-        random
+        suggestion du chef
       </span>
-      <a href="/" class="no-link"><h1 class="home-title">UNE ENVIE ?</h1></a>
-      <span class="home-item">search</span>
     </nav>
     <RouterView />
   </main>
 </template>
 
 <style>
+.nav-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 5rem 0 2rem 0;
+}
 
 </style>

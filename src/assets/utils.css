@@ -2,6 +2,10 @@
   display: flex;
 }
 
+.grid {
+  display: grid;
+}
+
 .wrap {
   flex-wrap: wrap;
 }
@@ -14,6 +18,10 @@
   justify-content: center;
 }
 
+.quad-grid {
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
 .center-text {
   text-align: center;
 }
@@ -24,6 +32,14 @@
 
 .gap {
   gap: 1rem;
+}
+
+.vgap {
+  gap: 1rem 0;
+}
+
+.mh-auto {
+  margin: 0 auto;
 }
 
 .mt-5 {
