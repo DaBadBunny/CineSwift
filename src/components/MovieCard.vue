@@ -34,7 +34,6 @@ const props = defineProps<{
     aspect-ratio: 2/3;
     background-color: rgba(0,0,0,1);
     background-size: cover;
-    color: white;
     position: relative;
   }
 

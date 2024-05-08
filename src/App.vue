@@ -3,7 +3,7 @@ import { RouterView, useRouter } from 'vue-router'
 const router = useRouter()
 
 function pickRandomMovie() {
-  router.push({ name: 'suggestion', params: { id: Math.floor(Math.random() * 366) } })
+  router.push({ name: 'suggestion', params: { id: Math.floor(Math.random() * 367) } })
 }
 
 function chooseYourWay() {
@@ -25,7 +25,7 @@ function chooseYourWay() {
         class="home-item" 
         @click="pickRandomMovie()"
       >
-        suggestion du chef
+        le plat du jour
       </span>
     </nav>
     <RouterView />
