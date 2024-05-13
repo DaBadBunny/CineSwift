@@ -25,10 +25,10 @@
 </template>
 
 <style scoped>
-.movie-grid {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  column-gap: 1rem;
-  row-gap: 1rem;
-}
+  .movie-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    column-gap: 1rem;
+    row-gap: 1rem;
+  }
 </style>
