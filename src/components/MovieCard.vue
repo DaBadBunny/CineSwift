@@ -31,10 +31,11 @@ const props = defineProps<{
 
 <style scoped>
   .movie-box {
-    aspect-ratio: 2/3;
     background-color: rgba(0,0,0,1);
     background-size: cover;
     position: relative;
+    min-width: 100%;
+    aspect-ratio: 2/3;
   }
 
   .movie-box:hover .poster {
