@@ -3,6 +3,19 @@
   import rawData from '@/assets/data.json'
 
   let MovieList = rawData.sort((a, b) => a.Title.localeCompare(b.Title))
+  
+  function convertToHours(runtime: string) {
+    const base = Number(runtime.replace(' min', ''))
+    const prefix = (Math.floor(base / 60)).toLocaleString('en-US', {
+      minimumIntegerDigits: 2,
+      useGrouping: false
+    })
+    const suffix = (base - (Number(prefix) * 60)).toLocaleString('en-US', {
+      minimumIntegerDigits: 2,
+      useGrouping: false
+    })
+    return (prefix + 'h' + suffix)
+  }
 </script>
 
 <template>
@@ -13,7 +26,7 @@
           :key="idx"
           :title="movie.Title"
           :year="movie.Year"
-          :runtime="movie.Runtime"
+          :runtime="convertToHours(movie.Runtime)"
           :genre="movie.Genre"
           :director="movie.Director"
           :actors="movie.Actors"

@@ -10,7 +10,8 @@
 
 <template>
     <div class="home-container">
-      <div v-if="RandomMovie">
+      <Transition appear name="fade">
+      <div v-if="RandomMovie" class="suggested-movie">
         <MovieCard 
           :title="RandomMovie.Title"
           :year="RandomMovie.Year"
@@ -22,13 +23,23 @@
           :plot="RandomMovie.Plot"
         />
       </div>
+    </Transition>
     </div>
 </template>
 
 <style scoped>
-.movie-box {
-  width: 25%;
-  aspect-ratio: 2/3;
-  margin: auto;
+.suggested-movie {
+    width: 25%;
+    margin: auto;
+}
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 1s ease;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
 }
 </style>

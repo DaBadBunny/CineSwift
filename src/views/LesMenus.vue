@@ -9,11 +9,7 @@
       filter: 'Runtime > 120' 
     },
     {
-      title:'Ail Caramba',
-      filter: 'Thriller' 
-    },
-    {
-      title:'Léger et coloré',
+      title:'Farce en croute',
       filter: 'Comedy' 
     },
     {
@@ -21,19 +17,19 @@
       filter: 'Biography' 
     },
     {
-      title:'Là où on va il n\'y a pas besoin de fourchette',
+      title:'Space cake',
       filter: 'Sci-Fi' 
     },
     {
-      title:'A partager',
+      title:'Assiette à partager',
       filter: 'Romance' 
     },
     {
-      title:'Poulet au plomb',
+      title:'Plus un zeste !',
       filter: 'Crime' 
     },
     {
-      title:'La dose de piment',
+      title:'Piment',
       filter: 'Thriller' 
     },
     {
@@ -41,7 +37,7 @@
       filter: 'Drama' 
     },
     {
-      title:'Langue de boeuf',
+      title:'Langue et cervelle',
       filter: 'Horror' 
     },
     {
@@ -75,12 +71,12 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    gap: 1rem;
+    gap: 3rem;
   }
 
   .tag {
     color: white;
-    font-size: 1rem;
+    font-size: 1.25rem;
     font-family: "Courier Prime", monospace;
     border: none;
     padding: 0.5rem;
