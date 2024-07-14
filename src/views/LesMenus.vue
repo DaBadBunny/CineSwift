@@ -5,7 +5,7 @@
       filter: 'Runtime < 120' 
     },
     {
-      title:'Ca se mange sans fin',
+      title:'',
       filter: 'Runtime > 120' 
     },
     {
@@ -41,7 +41,7 @@
       filter: 'Horror' 
     },
     {
-      title:'En quête de saveur',
+      title:'Enquête de saveur',
       filter: 'Mystery' 
     }
   ]

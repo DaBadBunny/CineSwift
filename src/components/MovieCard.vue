@@ -22,19 +22,29 @@ const props = defineProps<{
         :alt="props.title"
       >
       <div class="infos">
-        <span class="bold">{{ props.title }} ({{ props.year }})</span>
+        <span class="title">{{ props.title }} ({{ props.year }})</span>
         <p>{{ props.runtime }}</p>
-        <p>{{ props.plot }}</p>
+        <p class="plot">{{ props.plot }}</p>
       </div>
     </div>
 </template>
 
 <style scoped>
+  .title {
+    font-size: 1.1rem;
+    font-weight: bold;
+  }
+
+  .plot {
+    font-size: 0.9rem;
+  }
+
   .movie-box {
     background-color: rgba(0,0,0,1);
     background-size: cover;
     position: relative;
     min-width: 100%;
+    min-height: max-content;
     aspect-ratio: 2/3;
   }
 

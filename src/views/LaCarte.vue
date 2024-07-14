@@ -16,6 +16,13 @@
     })
     return (prefix + 'h' + suffix)
   }
+
+  function containPlot(plot: string) {
+    if (plot.length > 200) {
+      plot = plot.slice(0, 200) + '...'
+    }
+    return plot
+  }
 </script>
 
 <template>
@@ -31,7 +38,7 @@
           :director="movie.Director"
           :actors="movie.Actors"
           :poster="movie.Poster"
-          :plot="movie.Plot"
+          :plot="containPlot(movie.Plot)"
         />
       </div>
     </div>
@@ -40,7 +47,7 @@
 <style scoped>
   .movie-grid {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(6, 1fr);
     column-gap: 1rem;
     row-gap: 1rem;
   }
