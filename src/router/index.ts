@@ -16,7 +16,7 @@ const router = createRouter({
     {
       path: '/suggestion/:id',
       name: 'suggestion',
-      component: () => import('../views/SuggestionChef.vue'),
+      component: () => import('../views/PlatDuJour.vue'),
     },
   ]
 })

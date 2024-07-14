@@ -1,7 +1,7 @@
 <script setup>
   const menus = [
     {
-      title: 'Petite faim', 
+      title: 'Petites faims', 
       filter: 'Runtime < 120' 
     },
     {
